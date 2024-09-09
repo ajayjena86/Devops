@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ajayjena86/Devops.git', branch: 'main''
+                git url: 'https://github.com/ajayjena86/Devops.git', branch: 'main'
             }
         }
         stage('Build') {
